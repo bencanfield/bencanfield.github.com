@@ -1,1 +1,93 @@
-test
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" /> 
+ 
+  <title>Ben Canfield</title> 
+	<link rel="shortcut icon" href="/favicon.ico" > 
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".section").hide();
+		$(window.location.hash).show();
+		$(window).on("hashchange", function() {
+		$(".section").hide();
+		$(window.location.hash).show();
+		return false;
+		});
+		if (!window.location.hash) { window.location.hash = "#info" }
+	});
+	</script>
+</head> 
+ 
+<body>
+	<div id="wrapper">	
+		<h1>Ben Canfield
+			<a href="http://twitter.com/bencanfield"><img src="twit.png" alt="facebook" width="16" height="16"></a>
+			<a href="http://www.facebook.com/bencanfield"><img src="face.png" alt="facebook" width="16" height="16"></a>
+			<a href="mailto:bencanfield@gmail.com"><img src="mail.png" alt="facebook" width="16" height="16"></a>
+		</h1>
+    <div id="elsewhere">
+		<!--
+		<a href="http://www.flickr.com/photos/bencanfield/">Flickr</a> |
+		<a href="http://vimeo.com/bencanfield">Vimeo</a> |
+		<a href="https://soundcloud.com/bencanfield">Soundcloud</a> |
+		<a href="http://bencanfield.blogspot.com/">Blogspot</a>
+		//-->
+		
+		<a href="#illustration" class="link">Illustration</a> |
+		<a href="#video" class="link">Video</a> |
+		<a href="#audio" class="link">Audio</a> |
+		<a href="#info" class="link">Info</a> |
+				
+		<br> <br>
+		
+		<!-- ILLUSTRATION //-->
+		<div id="illustration" class="section">
+		<img src="http://farm9.staticflickr.com/8098/8539332785_23012b1896_z.jpg" width="640" height="640" alt="cardinal"><br>
+		<img src="http://farm9.staticflickr.com/8366/8403825094_b108ee2f22_z.jpg" width="640" height="424" alt="hand"><br>
+		<img src="http://farm8.staticflickr.com/7019/6763147789_10a633a95a_b.jpg" width="640" height="960" alt="Fantastic Arcade Arcade Art"><br>
+		<img src="http://farm5.staticflickr.com/4008/5166921649_b63ea7cd14_z.jpg" width="640" height="560" alt="octodad"><br>
+		<img src="http://farm8.staticflickr.com/7035/6763134959_f7b32f4934_b.jpg" width="640" height="960" alt="OctoShirt_Front2"><br>
+		<img src="http://farm8.staticflickr.com/7156/6763191923_4230ceef38_z.jpg" width="640" height="354" alt="room"><br>
+		<img src="http://farm8.staticflickr.com/7188/6873581039_5a0b344e7c_z.jpg" width="640" height="640" alt="Poster003"><br>
+		<img src="http://farm6.staticflickr.com/5090/5284435363_498554140d_z.jpg" width="640" height="480" alt="cat">
+		</div>
+		
+		<!-- VIDEO //-->
+		<div id="video" class="section">
+		<iframe src="http://player.vimeo.com/video/41198618?title=0&amp;byline=0&amp;portrait=0&amp;color=f83f27" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br>
+		<iframe src="http://player.vimeo.com/video/12236042?title=0&amp;byline=0&amp;portrait=0&amp;color=f83f27" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br>
+		<iframe src="http://player.vimeo.com/video/23128853?title=0&amp;byline=0&amp;portrait=0&amp;color=f83f27" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br>
+		<iframe src="http://player.vimeo.com/video/11631216?title=0&amp;byline=0&amp;portrait=0&amp;color=f83f27" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br>
+	
+		<object type="application/x-shockwave-flash" width="640" height="360" data="http://www.flickr.com/apps/video/stewart.swf?v=109786" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=ff68c0667d&photo_id=3895958084"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=109786"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=109786" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=ff68c0667d&photo_id=3895958084" height="360" width="640"></embed></object>
+		</div>
+		
+		<!-- AUDIO //-->
+		<div id="audio" class="section">
+		<iframe width="640px" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F33028725&show_artwork=false&show_user=false&show_playcount=false&sharing=false&download=false&buying=false&show_comments=false"></iframe>
+		<iframe width="640px" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F27451693&show_artwork=false&show_user=false&show_playcount=false&sharing=false&download=false&buying=false&show_comments=false"></iframe>
+		<iframe width="640px" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F54320079&show_artwork=false&show_user=false&show_playcount=false&sharing=false&download=false&buying=false&show_comments=false"></iframe>
+		<iframe width="640px" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F60077471&show_artwork=false&show_user=false&show_playcount=false&sharing=false&download=false&buying=false&show_comments=false"></iframe>
+		<iframe width="640px" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F74315533&show_artwork=false&show_user=false&show_playcount=false&sharing=false&download=false&buying=false&show_comments=false"></iframe>
+		</div>
+		
+		<!-- INFO //-->
+		<div id="info" class="section">
+		<p align="justify">
+		<img src="me.png" align="auto" alt="bamf" width="640" height="512">
+		<br></br>
+		Ben Canfield is a Chicago based game artist. He received his Bachelor of Science in Animation at DePaul University<span>
+		where he worked on the award-winning game <a href="http://www.octodadgame.com/octodad/about/">Octodad</a> as the lead visual designer.<span>
+		His creative outlets are graphic design, animation, and music; on the hunt for a visceral yet unconventional aesthetic.<span>
+		Other loves include the the outdoors, watching films, riding his bike, playing pool, and drinking beer.<span>
+		<br>
+		<br>
+		email: bencanfield@gmail.com &nbsp&nbsp// <a href="resume.pdf">resume</a></p>
+		</div>
+	</div>
+	</div>	
+</body> 
+</html>
