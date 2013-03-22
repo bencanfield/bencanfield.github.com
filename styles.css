@@ -5,14 +5,14 @@ body {
 
 #wrapper {
 	width: 640px;
-	margin: 16px auto;
+	margin: 0px auto;
 	padding: 16px;
 	background-color: #fff;
 	text-align: left;
 }
 
 h1 {
-	margin: 8px;
+	margin: 0px;
 	margin-top: 0px;
 	margin-bottom: 8px;
 	font-size: 20px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 p{
-	margin: 8px;
+	margin: 0px;
 	margin-top: 0px;
 	margin-bottom: 8px;
 	font-size: 12px;
