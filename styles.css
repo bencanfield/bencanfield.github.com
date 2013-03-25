@@ -49,6 +49,11 @@ p{
 #audio {
 }
 
+html {
+     overflow: -moz-scrollbars-vertical;
+     overflow: scroll;
+}
+
 #video {
 }
 
