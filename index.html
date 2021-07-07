@@ -17,7 +17,7 @@
       $(window).on("hashchange", function() {
         $(".section").hide();
         $(window.location.hash).show();
-        $(this).scrollTop(0);
+        $(window.scrollTop(0));
         return false;
       });
       if (!window.location.hash) {
