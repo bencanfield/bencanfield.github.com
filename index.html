@@ -9,9 +9,7 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      if (!window.location.hash) {
-            window.location.hash = "info";
-      }
+
       $(".section").hide();
       $(window.location.hash).show();
 
@@ -20,6 +18,9 @@
         $(window.location.hash).show();
         return false;
       });
+      if (!window.location.hash) {
+      window.location.hash = "info";
+      }
     });
   </script>
 </head>
@@ -27,9 +28,9 @@
 <body>
   <div id="wrapper">
     <h1>Ben Canfield
-      <a href="http://twitter.com/bencanfield"><img src="twit.png" alt="facebook" width="16" height="16"></a>
+      <a href="http://twitter.com/bencanfield"><img src="twit.png" alt="twitter" width="16" height="16"></a>
       <a href="http://www.facebook.com/bencanfield"><img src="face.png" alt="facebook" width="16" height="16"></a>
-      <a href="mailto:bencanfield@gmail.com"><img src="mail.png" alt="facebook" width="16" height="16"></a>
+      <a href="mailto:bencanfield@gmail.com"><img src="mail.png" alt="gmail" width="16" height="16"></a>
     </h1>
     <div id="elsewhere">
     <!--
