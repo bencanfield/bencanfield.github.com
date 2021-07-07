@@ -13,15 +13,14 @@
       $(".section").hide();
       $(window.location.hash).show();
 
-
       $(window).on("hashchange", function() {
         $(".section").hide();
         $(window.location.hash).show();
-        $(window).scrollTo(0,0);
         return false;
       });
       if (!window.location.hash) {
       window.location.hash = "info";
+      window.scrollTo(0,0);
       }
     });
   </script>
