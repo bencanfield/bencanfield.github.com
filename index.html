@@ -12,6 +12,7 @@
 
       $(".section").hide();
       $(window.location.hash).show();
+      $(this).scrollTop(0);
 
       $(window).on("hashchange", function() {
         $(".section").hide();
