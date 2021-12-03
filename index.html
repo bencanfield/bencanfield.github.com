@@ -9,18 +9,18 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      
-        $(".section").hide();
-        $(window.location.hash).show();
+      $(".section").hide();
+      $(window.location.hash).show();
 
       $(window).on("hashchange", function() {
         $(".section").hide();
         $(window.location.hash).show();
         return false;
       });
+
       if (!window.location.hash) {
-      window.location.hash = "info";
-      }
+            window.location.hash = "#info";
+          }
     });
   </script>
 </head>
